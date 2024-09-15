@@ -2,8 +2,8 @@
 using namespace std;
 class shop
 {
-    int itemid[10];
-    int itemprice[10];
+    int itemid[100];
+    int itemprice[100];
     void value(void);
     int counter;
 
@@ -41,9 +41,12 @@ void shop::display()
 }
 int main()
 {
+    int n;
+    cout<<"Enter the number of item you want in your mart from 1 to 100 :"<<endl;
+    cin>>n;
     shop VMart;
     VMart.initcounter();
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < n; i++)
     {
         VMart.setdata();
     }
